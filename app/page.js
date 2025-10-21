@@ -34,7 +34,7 @@ export default function HomePage() {
     } else {
       setLoading(false); 
     }
-  }, []); 
+  }, [movies, setMovies]); 
 
   if (loading) {
     return <Loader />;
